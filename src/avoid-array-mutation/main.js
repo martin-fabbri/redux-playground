@@ -1,6 +1,4 @@
-/// <reference path="../../typings/tsd.d.ts" />
 var addCounter = function (list) {
-    //return list.concat([0]);
     return list.concat([0]);
 };
 var removeCounter = function (list, index) {

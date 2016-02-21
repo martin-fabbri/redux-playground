@@ -1,4 +1,3 @@
-/// <reference path="../../typings/tsd.d.ts" />
 var todo = function (state, action) {
     switch (action.type) {
         case 'ADD_TODO':

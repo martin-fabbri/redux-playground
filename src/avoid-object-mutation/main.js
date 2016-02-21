@@ -1,7 +1,4 @@
-/// <reference path="../../typings/tsd.d.ts" />
 var toggleTodo = function (todo) {
-    //todo.completed = !todo.completed;
-    //return todo;
     return Object.assign({}, todo, { completed: !todo.completed });
 };
 var deepFreeze = function (o) {

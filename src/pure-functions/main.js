@@ -1,4 +1,3 @@
-/// <reference path="../../typings/tsd.d.ts" />
 var counter = function (state, action) {
     if (state === void 0) { state = 0; }
     if (action === void 0) { action = { type: 'INCREMENT' }; }

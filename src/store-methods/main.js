@@ -1,4 +1,3 @@
-/// <reference path="../../typings/tsd.d.ts" />
 var createStore = Redux.createStore;
 var counter = function (state, action) {
     if (state === void 0) { state = 0; }
