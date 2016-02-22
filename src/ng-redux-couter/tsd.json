@@ -6,7 +6,7 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "redux/redux.d.ts": {
-      "commit": "99c4fb76b5d941939ba53e61d0daee4bd74f150f"
+      "commit": "32345ecb1a86750733eea0ea16356963ec4a2f61"
     },
     "expect.js/expect.js.d.ts": {
       "commit": "99c4fb76b5d941939ba53e61d0daee4bd74f150f"
@@ -19,6 +19,9 @@
     },
     "jquery/jquery.d.ts": {
       "commit": "95433230a9913054c57c715e6b91a9ae738d0b97"
+    },
+    "redux-thunk/redux-thunk.d.ts": {
+      "commit": "32345ecb1a86750733eea0ea16356963ec4a2f61"
     }
   }
 }
