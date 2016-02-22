@@ -1,10 +1,8 @@
-//region Imports
 import {combineReducers, Reducer} from 'redux';
-import lineup from './lineup';
-//endregion
+import counter from './counter';
 
 const rootReducer: Reducer = combineReducers({
-    lineup
+    counter
 });
 
 export default rootReducer;

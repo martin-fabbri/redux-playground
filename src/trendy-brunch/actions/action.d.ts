@@ -1,9 +1,11 @@
-declare module counter {
+declare module tbranch {
 
-  export interface Action {
+  export interface Action<T> {
     type: string;
+    payload: T;
+    error?: boolean;
+    meta?: any;
   }
-
 
 }
 

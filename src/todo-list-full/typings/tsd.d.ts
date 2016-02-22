@@ -5,4 +5,3 @@
 /// <reference path="jquery/jquery.d.ts" />
 /// <reference path="../node_modules/ng-redux/index.d.ts" />
 /// <reference path="redux-thunk/redux-thunk.d.ts" />
-/// <reference path="redux-logger/redux-logger.d.ts" />
