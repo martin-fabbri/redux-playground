@@ -34,3 +34,7 @@ node_modules
 
 # Idea IDE
 .idea
+
+# Distribution build artifacts
+dist
+

@@ -10,7 +10,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'ngRedux Counter',
+            title: 'Todolist Redux-Angular',
             template: './index.html',
             inject: 'body'
         }),

@@ -5,3 +5,7 @@
 /// <reference path="jquery/jquery.d.ts" />
 /// <reference path="../node_modules/ng-redux/index.d.ts" />
 /// <reference path="redux-thunk/redux-thunk.d.ts" />
+/// <reference path="redux-actions/redux-actions.d.ts" />
+/// <reference path="assertion-error/assertion-error.d.ts" />
+/// <reference path="chai/chai.d.ts" />
+/// <reference path="mocha/mocha.d.ts" />
