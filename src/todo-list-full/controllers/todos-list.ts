@@ -6,20 +6,10 @@ import {INgRedux} from 'ng-redux';
 import {Todo} from "../models/todos";
 import * as todoActions from "./../actions/todos";
 
-declare function require(file: string): string;
+export default class TodosListController {
 
-export default (): ng.IDirective => {
-    return {
-        restrict: 'E',
-        controllerAs: 'form',
-        controller: TodosFormController,
-        template: require('./todos-form.html'),
-        scope: {},
-        bindToController: true
-    };
-};
+    public test: string[] = ['a', 'b', 'c'];
 
-class TodosFormController {
     //----------------------------------------
     // dependencies declaration
     //----------------------------------------
@@ -33,8 +23,9 @@ class TodosFormController {
     }
 
     mapStateToThis(state: Todo[]) {
+        console.log('Todo List ...', state);
         return {
-            value: state
+            todos: state
         }
     }
 }

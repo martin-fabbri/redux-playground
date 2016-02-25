@@ -1,4 +1,4 @@
-import * as expect from 'chai';
+import * as chai from 'chai';
 import * as todoActions from './todos';
 
 var expect = chai.expect;

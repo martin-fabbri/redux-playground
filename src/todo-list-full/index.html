@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <title>ng-redux counter</title>
 </head>
-<body ng-app="counter">
+<body ng-app="app">
     <todos-form></todos-form>
+
+    <div ng-controller="todosList as l">
+        <p>{{l.todos}}</p>
+        <ul>
+            <li ng-repeat="t in l.todos.todos">
+                {{t}}
+                {{t.text}}
+            </li>
+        </ul>
+    </div>
+
+    <div ng-controller="todosList as l">
+        <p>{{l.test}}</p>
+        <ul>
+            <li ng-repeat="t in l.test">
+                {{t}}
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
