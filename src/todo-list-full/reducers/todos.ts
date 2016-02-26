@@ -3,7 +3,8 @@ import {handleActions, Action} from 'redux-actions';
 import {Todo} from './../models/todos'
 
 import {
-    ADD_TODO
+    ADD_TODO,
+    TOGGLE_TODO
 } from './../constants/action-types';
 
 const initialState: Todo[] = [
@@ -16,7 +17,7 @@ const initialState: Todo[] = [
 
 export default handleActions<Todo[]>({
     [ADD_TODO]: (state: Todo[], action: Action): Todo[] => {
-        return[
+        return [
             ...state,
             {
                 id: state.reduce<number>((maxId: number, todo: Todo) =>
@@ -26,18 +27,12 @@ export default handleActions<Todo[]>({
                 text: action.payload.text
             }
         ];
+    },
+    [TOGGLE_TODO]: (state: Todo[], action: Action): Todo[] => {
+        return state.map<Todo>(
+            todo => (todo.id === action.payload.id)
+                ? action.payload
+                : todo
+        );
     }
 }, initialState);
-
-//
-//export default (state: number = 0, action: counter.Action): number => {
-//    switch (action.type) {
-//        case INCREMENT_COUNTER:
-//            return state + 1;
-//        case DECREMENT_COUNTER:
-//            return state - 1;
-//        default:
-//            console.log('return default state ....', state);
-//            return state;
-//    }
-//}

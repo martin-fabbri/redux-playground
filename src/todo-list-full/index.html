@@ -7,21 +7,12 @@
 <body ng-app="app">
     <todos-form></todos-form>
 
-    <div ng-controller="todosList as l">
-        <p>{{l.todos}}</p>
+    <div ng-controller="todosList as l">loc
         <ul>
-            <li ng-repeat="t in l.todos.todos">
-                {{t}}
+            <li ng-repeat="t in l.todos.todos"
+                ng-class="{strike: t.completed}"
+                ng-click="l.toggleTodo(t)">
                 {{t.text}}
-            </li>
-        </ul>
-    </div>
-
-    <div ng-controller="todosList as l">
-        <p>{{l.test}}</p>
-        <ul>
-            <li ng-repeat="t in l.test">
-                {{t}}
             </li>
         </ul>
     </div>
