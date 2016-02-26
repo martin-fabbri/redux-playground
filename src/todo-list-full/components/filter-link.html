@@ -1,0 +1,5 @@
+<a href="#"
+   ng-if="!link.isCurrentFilter"
+   ng-click="link.setVisibilityFilter(link.filter)">{{link.label}}</a>
+
+<span ng-if="link.isCurrentFilter">{{link.label}}</span>
