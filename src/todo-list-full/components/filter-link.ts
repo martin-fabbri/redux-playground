@@ -37,6 +37,9 @@ class FilterLinkController {
         $scope.$on('$destroy', unsubscribe);
     }
 
+    //----------------------------------------
+    // maps container properties required by the directive
+    //----------------------------------------
     mapStateToThis = (state: any) => {
         console.log('FilterLinkController', state);
         console.log('label', this.label);
